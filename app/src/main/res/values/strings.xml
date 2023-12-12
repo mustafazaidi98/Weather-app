@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="weather_condition_icon">Weather condition icon</string>
+    <string name="chicago">Chicago</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="celsius">Celsius</string>
+    <string name="daily">Daily</string>
+    <string name="location">Location</string>
+    <string name="unit">Unit</string>
+    <string name="evening">Evening</string>
+    <string name="filename">Settings.json</string>
+</resources>

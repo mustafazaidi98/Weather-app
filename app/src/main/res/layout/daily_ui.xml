@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#114381">
+
+    <TextView
+        android:id="@+id/morningLabel"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Morning"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morningDaily" />
+
+    <TextView
+        android:id="@+id/nightLabel"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Night"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/eveningLabel"
+        app:layout_constraintTop_toBottomOf="@+id/nightDaily" />
+
+    <TextView
+        android:id="@+id/nightDaily"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:lineSpacingExtra="34sp"
+        android:text="44.3°F"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/eveningDaily"
+        app:layout_constraintTop_toTopOf="@+id/eveningDaily" />
+
+    <TextView
+        android:id="@+id/eveningLabel"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/evening"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/afternoonLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/eveningDaily" />
+
+    <TextView
+        android:id="@+id/eveningDaily"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="44.3°F"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/afternoonDaily"
+        app:layout_constraintTop_toTopOf="@+id/afternoonDaily" />
+
+    <TextView
+        android:id="@+id/afternoonLabel2"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Afternoon"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/morningLabel"
+        app:layout_constraintTop_toBottomOf="@+id/afternoonDaily" />
+
+    <TextView
+        android:id="@+id/afternoonDaily"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="44.3°F"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/morningDaily"
+        app:layout_constraintTop_toBottomOf="@+id/UVIndexdaily" />
+
+    <TextView
+        android:id="@+id/morningDaily"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="44.3°F"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UVIndexdaily" />
+
+    <TextView
+        android:id="@+id/dateDaily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CD122568"
+        android:paddingLeft="10sp"
+        android:text="dateDaily"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperatureDaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Temperature"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateDaily" />
+
+    <TextView
+        android:id="@+id/conditionsDaily"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Partly cloudy with chances of rain at night"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureDaily" />
+
+    <ImageView
+        android:id="@+id/iconDaily"
+        android:layout_width="95dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toEndOf="@+id/conditionsDaily"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clear_day" />
+
+    <TextView
+        android:id="@+id/PercipDaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="PercipDaily"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conditionsDaily" />
+
+    <TextView
+        android:id="@+id/UVIndexdaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="UVIndexdaily"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PercipDaily" />
+</androidx.constraintlayout.widget.ConstraintLayout>
